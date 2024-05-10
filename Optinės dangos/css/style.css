@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Space+Mono&display=swap");
+* {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.nav {
+  position: relative;
+  display: inline-block;
+}
+
+.nav:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav:hover:after {
+  opacity: 1;
+}
+.navbar1 {
+  display: none;
+  text-decoration: none;
+}
+.navbar1.active {
+  display: block;
+  position: relative;
+  width: 238px;
+}
+DUK,
+kontaktai,
+poraste {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+.atsakymas {
+  position: relative;
+  left: 10%;
+}
+.afterNav {
+  margin-top: 3rem;
+}
+body {
+  background-color: black;
+}
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+.logo {
+  height: 1.8rem;
+}
+.hamburger {
+  fill: white;
+}
+.logo1 {
+  height: 1.8rem;
+  position: relative;
+}
+a {
+}
+.tekstas {
+  position: relative;
+  left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  line-height: 1.4;
+}
+.fixed {
+  position: fixed;
+  background-color: rgb(45, 40, 40);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.bar {
+  display: inline-block;
+}
+.pavadinimas {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: -1rem;
+  padding-top: 3rem;
+}
+#navhamburger {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a {
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  line-height: 1;
+}
+hamburger {
+  width: 100%;
+}
+.nav {
+  margin: 0.5rem 0rem;
+}
+nav {
+  width: 100%;
+}
+#navbar.active {
+  display: flex;
+}
+.picture {
+  height: none;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.suskleidziamas {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+}
+.suskleidziamas.active {
+  max-height: 1000px;
+}
+.extra {
+}
+.skyrelis {
+  display: block;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+.fleksas {
+  display: flex;
+}
+.skyrelioPavadinimas {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.skyrStartas {
+  justify-content: left;
+  z-index: 5;
+}
+.dvigubaRodyklyte-0 {
+  width: 32px;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+.dvigubaRodyklyte-0.dvigubaRodyklyte-90 {
+  transform: rotate(90deg);
+}
+.borderis {
+}
+.informacija {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.floatRight {
+  float: right;
+}
+.skyrelioInformacija {
+  width: 100%;
+  padding: 0 2% 0 2%;
+  margin-top: 0;
+}
+.flekshorizontaliai {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 2%;
+}
+.bottomBorder {
+  border-bottom: 1px solid white;
+}
+.fleksRow {
+  display: flex;
+  flex-direction: row;
+}
+.selectNone {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #navbar {
+    display: none;
+  }
+  .picture {
+    display: block;
+    width: 100%;
+  }
+  .skyrelioInformacija {
+    display: block;
+    width: 100%;
+  }
+  .suskleidziamas {
+    display: block;
+  }
+  .block {
+    width: 100%;
+  }
+  .suskleidziamas.active {
+    max-height: 1484.2px;
+  }
+  .floatRight {
+    float: none;
+  }
+  .flekshorizontaliai {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1079px) {
+  #navhamburger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #navhamburger {
+    display: none;
+  }
+}
